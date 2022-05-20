@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:react-perf/recommended',
     'standard',
     'plugin:prettier/recommended',
   ],
@@ -20,6 +21,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'react-perf',
     'jsx-a11y',
     '@typescript-eslint'
   ],
