@@ -1,6 +1,6 @@
 {
   "name": "@rocketseat/eslint-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "private": false,
   "description": "ESLint configuration used by Rocketseat.",
   "main": "index.js",
@@ -18,7 +18,10 @@
     "eslint-plugin-n": "^15.2.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0"
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.6.2"
   },
   "peerDependencies": {
     "eslint": "^7.23.0 || ^8.0.0",
@@ -28,10 +31,5 @@
     "typescript": {
       "optional": true
     }
-  },
-  "devDependencies": {
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.6.2"
   }
 }
