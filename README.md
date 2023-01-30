@@ -19,6 +19,7 @@ npm i -D eslint @rocketseat/eslint-config
 ```
 {
   "extends": "@rocketseat/eslint-config/react"
+  // "extends": "@rocketseat/eslint-config/node"
 }
 ```
 
