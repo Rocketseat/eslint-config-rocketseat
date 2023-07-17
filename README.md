@@ -10,17 +10,44 @@
 
 ## Setup
 
-1. Install the dependencies
+### React (with Next.js)
+
+Install dependencies:
 ```
 npm i -D eslint @rocketseat/eslint-config
 ```
-
-2. Create a `.eslintrc.json` file extending the config:
+Inside `.eslintrc.json`
 ```
 {
-  "extends": "@rocketseat/eslint-config/react"
-  // "extends": "@rocketseat/eslint-config/node"
+  "extends": [
+    "@rocketseat/eslint-config/next", 
+    "next/core-web-vitals"
+  ]
 }
 ```
 
-> You can also use a `.eslintrc.js` instead of JSON if you prefer.
+### React (without Next.js)
+
+Install dependencies:
+```
+npm i -D eslint @rocketseat/eslint-config
+```
+Inside `.eslintrc.json`
+```
+{
+  "extends": "@rocketseat/eslint-config/react"
+}
+```
+
+### Node.js
+
+Install dependencies:
+```
+npm i -D eslint @rocketseat/eslint-config
+```
+Inside `.eslintrc.json`
+```
+{
+  "extends": "@rocketseat/eslint-config/node"
+}
+```

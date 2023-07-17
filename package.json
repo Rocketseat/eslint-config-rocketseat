@@ -1,6 +1,6 @@
 {
   "name": "@rocketseat/eslint-config",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "private": false,
   "description": "ESLint configuration used by Rocketseat.",
   "main": "index.js",
@@ -17,7 +17,7 @@
       "optional": true
     }
   },
-  "devDependencies": {
+  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
     "eslint": "^8.0.0",
