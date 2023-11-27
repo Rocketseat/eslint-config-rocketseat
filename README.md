@@ -1,4 +1,4 @@
-# Rocketseat ESLint config
+# ESLint config
 
 ## Whats included?
 
@@ -6,6 +6,7 @@
 - React plugin;
 - React Hooks plugin;
 - JSX a11y plugin;
+- Eslint Plugin Import Helper;
 - Prettier;
 
 ## Setup
@@ -14,13 +15,13 @@
 
 Install dependencies:
 ```
-npm i -D eslint @rocketseat/eslint-config
+npm i -D eslint @holymos/eslint-config
 ```
 Inside `.eslintrc.json`
 ```
 {
   "extends": [
-    "@rocketseat/eslint-config/next", 
+    "@holymos/eslint-config/next", 
     "next/core-web-vitals"
   ]
 }
@@ -30,12 +31,12 @@ Inside `.eslintrc.json`
 
 Install dependencies:
 ```
-npm i -D eslint @rocketseat/eslint-config
+npm i -D eslint @holymos/eslint-config
 ```
 Inside `.eslintrc.json`
 ```
 {
-  "extends": "@rocketseat/eslint-config/react"
+  "extends": "@holymos/eslint-config/react"
 }
 ```
 
@@ -43,11 +44,11 @@ Inside `.eslintrc.json`
 
 Install dependencies:
 ```
-npm i -D eslint @rocketseat/eslint-config
+npm i -D eslint @holymos/eslint-config
 ```
 Inside `.eslintrc.json`
 ```
 {
-  "extends": "@rocketseat/eslint-config/node"
+  "extends": "@holymos/eslint-config/node"
 }
 ```
