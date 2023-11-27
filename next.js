@@ -5,52 +5,61 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'standard',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
+    "standard",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:eslint-plugin-import-helpers/recommended",
+    "plugin:prettier/recommended",
   ],
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module'
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  plugins: [
-    'jsx-a11y',
-    '@typescript-eslint'
-  ],
+  plugins: ["jsx-a11y", "@typescript-eslint"],
   rules: {
-    'prettier/prettier': ["error", {
-      'printWidth': 80,
-      'tabWidth': 2,
-      'singleQuote': true,
-      'trailingComma': 'all',
-      'arrowParens': 'always',
-      'semi': false,
-      'endOfLine': 'auto',
-    }],
-    'jsx-a11y/alt-text': [
-      'warn',
+    "import-helpers/order-imports": [
+      "warn",
       {
-        elements: ['img'],
-        img: ['Image'],
+        newlinesBetween: "always",
+        groups: ["module", "/^@/", ["parent", "sibling", "index"]],
+        alphabetize: { order: "asc", ignoreCase: true },
       },
     ],
-    'jsx-a11y/aria-props': 'warn',
-    'jsx-a11y/aria-proptypes': 'warn',
-    'jsx-a11y/aria-unsupported-elements': 'warn',
-    'jsx-a11y/role-has-required-aria-props': 'warn',
-    'jsx-a11y/role-supports-aria-props': 'warn',
-    'react/no-unknown-property': 'error',
+    "prettier/prettier": [
+      "error",
+      {
+        printWidth: 80,
+        tabWidth: 2,
+        singleQuote: true,
+        trailingComma: "all",
+        arrowParens: "always",
+        semi: true,
+        endOfLine: "auto",
+      },
+    ],
+    "jsx-a11y/alt-text": [
+      "warn",
+      {
+        elements: ["img"],
+        img: ["Image"],
+      },
+    ],
+    "jsx-a11y/aria-props": "warn",
+    "jsx-a11y/aria-proptypes": "warn",
+    "jsx-a11y/aria-unsupported-elements": "warn",
+    "jsx-a11y/role-has-required-aria-props": "warn",
+    "jsx-a11y/role-supports-aria-props": "warn",
+    "react/no-unknown-property": "error",
   },
   settings: {
     react: {
-      version: 'detect',
+      version: "detect",
     },
-    'import/parsers': {
-      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+    "import/parsers": {
+      [require.resolve("@typescript-eslint/parser")]: [".ts", ".tsx", ".d.ts"],
     },
-  }
-}
+  },
+};
