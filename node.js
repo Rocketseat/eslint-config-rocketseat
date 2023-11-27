@@ -13,11 +13,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: [
-    "@typescript-eslint",
-    "plugin:eslint-plugin-import-helpers/recommended",
-    "prettier",
-  ],
+  plugins: ["@typescript-eslint", "eslint-plugin-import-helpers", "prettier"],
   rules: {
     "import-helpers/order-imports": [
       "warn",

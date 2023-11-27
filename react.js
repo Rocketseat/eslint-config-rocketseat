@@ -23,7 +23,7 @@ module.exports = {
     "react",
     "jsx-a11y",
     "@typescript-eslint",
-    "plugin:eslint-plugin-import-helpers/recommended",
+    "eslint-plugin-import-helpers",
     "prettier",
   ],
   rules: {
