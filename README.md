@@ -21,8 +21,8 @@ Inside `.eslintrc.json`
 ```
 {
   "extends": [
-    "@holymos/eslint-config/next", 
-    "next/core-web-vitals"
+    "next/core-web-vitals",
+    "@holymos/eslint-config/next" 
   ]
 }
 ```
